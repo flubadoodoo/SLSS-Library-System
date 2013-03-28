@@ -1,0 +1,2 @@
+log:sham
+logtype:librarian

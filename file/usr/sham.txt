@@ -1,0 +1,4 @@
+id:sham
+name:sham
+type:librarian
+password:h
