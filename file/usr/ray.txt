@@ -1,0 +1,4 @@
+id:ray
+name:ray
+type:student
+password:r

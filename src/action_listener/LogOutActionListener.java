@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import main.Main;
+import main.Main.PANELS;
 
 public class LogOutActionListener implements ActionListener {
 	
@@ -11,7 +12,7 @@ public class LogOutActionListener implements ActionListener {
 	}
 	
 	public void actionPerformed(ActionEvent e) {
-		Main.setPanel(Main.PANELS.WELCOME);
+		Main.setPanel(PANELS.WELCOME);
 	}
 	
 }

@@ -1,0 +1,4 @@
+id:lewis
+name:lewis
+type:student
+password:l

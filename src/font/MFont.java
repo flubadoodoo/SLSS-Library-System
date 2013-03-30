@@ -1,7 +1,7 @@
 package font;
 
 import guiElements.MButton;
-import guiElements.MyTextField;
+import guiElements.MTextField;
 
 import java.awt.Font;
 
@@ -23,12 +23,12 @@ public class MFont {
 		return label.getFontMetrics(label.getFont()).getHeight();
 	}
 	
-	public static int getTextWidth(MyTextField text) {
-		return text.getFontMetrics(text.getFont()).stringWidth(text.getText());
+	public static int getTextWidth(MTextField text) {
+		return text.getFontMetrics(text.getFont()).stringWidth(text.getPrompt()) + 20;
 	}
 	
-	public static int getTextHeight(MyTextField text) {
-		return text.getFontMetrics(text.getFont()).getHeight();
+	public static int getTextHeight(MTextField text) {
+		return text.getFontMetrics(text.getFont()).getHeight() + 10;
 	}
 	
 	public static int getButtonWidth(MButton button) {

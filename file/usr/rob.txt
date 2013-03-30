@@ -1,0 +1,4 @@
+id:rob
+name:rob
+type:student
+password:r

@@ -1,0 +1,4 @@
+id:ham
+name:ham
+type:student
+password:h

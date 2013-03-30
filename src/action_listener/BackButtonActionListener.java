@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import main.Main;
+import main.Main.PANELS;
 
 public class BackButtonActionListener implements ActionListener {
 	
@@ -28,10 +29,13 @@ public class BackButtonActionListener implements ActionListener {
 				if (s.next().equals(panelClass)) {
 					switch (s.next()) {
 					case "LoggedInScreen":
-						Main.setPanel(Main.PANELS.LOGGED_IN);
+						Main.setPanel(PANELS.LOGGED_IN);
 						break;
 					case "AccountScreen":
-						Main.setPanel(Main.PANELS.ACCOUNT);
+						Main.setPanel(PANELS.ACCOUNT);
+						break;
+					case "LibraryFunctionScreen":
+						Main.setPanel(PANELS.LIBRARY_FUNC);
 						break;
 					}
 				}

@@ -2,3 +2,5 @@ AccountScreen:LoggedInScreen
 BooksScreen:AccountScreen
 FinesScreen:AccountScreen
 LibraryFunctionScreen:LoggedInScreen
+LibraryBooksScreen:LibraryFunctionScreen
+LibraryStudentsScreen:LibraryFunctionScreen

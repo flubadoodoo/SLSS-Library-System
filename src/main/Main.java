@@ -35,13 +35,6 @@ public class Main extends JXFrame {
 		WELCOME, LOGGED_IN, ACCOUNT, BOOKS, FINES, LIBRARY_FUNC, LIB_BOOKS, LIB_STUDENTS
 	};
 	
-	/* Constructor of the Main class.
-	 * Sets some properties of the JXFrame. Sets the initial JXPanel to the WelcomeScreen.
-	 * */
-	public Main() {
-		
-	}
-	
 	/* Main method.
 	 * The program starts here. This method creates a new instance of Main.
 	 * */
@@ -55,14 +48,14 @@ public class Main extends JXFrame {
 		Main.addPanel(new BooksScreen("my books"), "AccountScreen"); // create a my books screen
 		Main.addPanel(new FinesScreen("my fines"), "AccountScreen"); // create a my fines screen
 		Main.addPanel(new LibraryFunctionScreen("library functions"), "LoggedInScreen"); // create a library functions screen
-		Main.addPanel(new LibraryBooksScreen("library books"), "LibraryFuctionScreen"); // create a library books screen
+		Main.addPanel(new LibraryBooksScreen("library books"), "LibraryFunctionScreen"); // create a library books screen
 		Main.addPanel(new LibraryStudentsScreen("library students"), "LibraryFunctionScreen"); // create a library students screen
 		// set the initial location of the window to be centered on the display
 		mainFrame.setLocation((int) GraphicsEnvironment.getLocalGraphicsEnvironment().getCenterPoint().getX() - DISPLAY_WIDTH / 2, (int) GraphicsEnvironment.getLocalGraphicsEnvironment().getCenterPoint().getY() - DISPLAY_HEIGHT / 2);
 		mainFrame.setDefaultCloseOperation(EXIT_ON_CLOSE); // set what happens when the close button is pressed
 		mainFrame.setTitle("SLSS Library System"); // set the title of the window
 		mainFrame.setSize(DISPLAY_WIDTH, DISPLAY_HEIGHT); // set the size of the window
-		Main.setPanel(Main.PANELS.WELCOME); // set the content pane to show the welcome screen panel
+		Main.setPanel(PANELS.WELCOME); // set the content pane to show the welcome screen panel
 		mainFrame.setVisible(true); // make the window visible
 	}
 	

@@ -1,0 +1,4 @@
+id:fez
+name:fez
+type:student
+password:f

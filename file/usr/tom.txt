@@ -1,0 +1,4 @@
+id:tom
+name:tom
+type:student
+password:t

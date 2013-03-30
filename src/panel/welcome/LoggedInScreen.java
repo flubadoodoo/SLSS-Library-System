@@ -5,8 +5,6 @@ import guiElements.MButton;
 import guiElements.MLabel;
 
 import java.awt.Container;
-import java.io.File;
-import java.util.HashMap;
 
 import main.Main;
 import panel.abstractPanel.AbstractPanel;
@@ -45,21 +43,11 @@ public class LoggedInScreen extends AbstractPanel {
 	}
 	
 	private boolean librarianLoggedIn() {
-		HashMap<String, String> map = IO.retrieveHashMapFromFile(new File("file/sys/log/log.txt"));
-		String type = map.get("logtype");
-		if (type != null) {
-			return type.equals("librarian");
-		} else {
-			return false;
-		}
+		return IO.retrieveLoggedInUserType();
 	}
 	
 	private String getLoggedInUserName() {
-		HashMap<String, String> map = IO.retrieveHashMapFromFile(new File("file/sys/log/log.txt"));
-		if (map.get("log") != null) {
-			return map.get("log");
-		}
-		return "";
+		return IO.retrieveLoggedInUserName();
 	}
 	
 }

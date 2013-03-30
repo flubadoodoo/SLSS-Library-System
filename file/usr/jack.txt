@@ -1,0 +1,4 @@
+id:jack
+name:jack
+type:student
+password:j

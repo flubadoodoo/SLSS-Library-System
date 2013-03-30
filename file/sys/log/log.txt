@@ -1,2 +1,2 @@
-log:sham
+logname:sham
 logtype:librarian
